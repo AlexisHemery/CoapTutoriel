@@ -49,3 +49,12 @@ Les messages CoAP sont par défaut transportés au travers de datagrammes UDP. C
 | **Code** | COmposé de 8 bits, dont les 3 bits les plus significatifs indiquent la classe et les 5 bits les moins significatifs les détails. Le code permet d'indiquer le type de message, "0" pour une requête, "2" pour une réponse OK, "4" pour une réponse en erreur client, "5" pour une erreur serveur. Dans le cas d'une requête le code indique la méthode de la requête et dans le cas d'une réponse, le code de la réponse. Le code "0.00" indique quant à lui un message vide |
 | **Message ID** | 16 bits utilisés pour détecter la duplication de messages et faire correspondre les messages _acknowlegment/reset_ aux messages de type _Confirmable/Non-Confirmable_ . |
 | **Token** | composé de 0 à 8 octects, utilisés pour associer une requête avec une réponse. |
+
+
+Pour lancer le test, assurez vous que les fichier coapServeur.py et exempleresources.py sont dans le même dossier.
+Téléchargez au préalable les librairies necessaires
+**ATTENTION la librairie CoAPthon n'est pas compatible avec python 3, j'ai utilisé python 2.7**
+
+Lancez dans un premier temps le script serveur, puis le script client.
+
+Il sagit d'un simple test d'une requête
