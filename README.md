@@ -41,9 +41,3 @@ Internal Server Error
 
 Les messages CoAP sont par défaut transportés au travers de datagrammes UDP. Cette communication peut être transmise via DTLS mais aussi par d’autres moyens comme SMS, TCP, ou SCTP. Les messages sont encodés dans un format binaire simple. Un message commence par un entête fixe de 4 octets, suivi par un champ « Token » de taille variable comprise entre 0 et 8 octets qui permet dans les échanges d’associer les requêtes aux réponses. Sa longueur est indiquée par le champ « TKL ». Il apparait ensuite, une séquence d’options au format TLV suivie en option des données qui occupent le reste du datagramme. Dans le cas où ces dernières sont présentes, elles sont séparées de l’entête grâce à un marqueur d’1 octet contenant la valeur «0xFF».
 
-
-| Header 1      |     2 header    |   header 3 |
-| ------------- |: -------------: | ---------: |
-| 1 Online      |        1        |      value |
-| Line 2        |        2        |      value |
-| 3 Online      |        3        |      value |
