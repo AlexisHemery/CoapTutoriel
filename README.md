@@ -44,5 +44,26 @@ Les messages CoAP sont par défaut transportés au travers de datagrammes UDP. C
 | Champ       |     Description     |
 | :------------ | :-------------: | 
 | Ver(Version)      |     Ce champ possède 2 bits, indiquant la version CoAP utilisée     |
-| T (Type)     |   Utilisé pour préciser le type du message  #Confirmable(0) : Message requiert une réponse qui peut être véhiculée par un message d'acknowledgment ou envoyé de façon asynchrone si la demande ne peut être traitée immédiatement. Dans ce cas un Reset sera retourné. Nota, un message Confirmable peut être aussi bien une requête qu'une réponse qui doit être acquittée  #Non-confirmable(1):  Le message requiert aucune réponse ou acquittement  #Acknowledgment(2):  Le message confirme la réponse d'un message _Confirmable_ dans le cas où la demande n'aurait pu être traitée de façon synchrone, le message ID sera alors utilisé pour associe la réponse à la demande.  #Reset(3):  Dans le cas où le message n'a pas pu être traité   |
+| T (Type)     |   Utilisé pour préciser le type du message  
+
+
+#Confirmable(0) : 
+
+
+Message requiert une réponse qui peut être véhiculée par un message d'acknowledgment ou envoyé de façon asynchrone si la demande ne peut être traitée immédiatement. Dans ce cas un Reset sera retourné. Nota, un message Confirmable peut être aussi bien une requête qu'une réponse qui doit être acquittée  
+
+
+#Non-confirmable(1):  
+
+
+Le message requiert aucune réponse ou acquittement  
+
+
+#Acknowledgment(2):  
+
+Le message confirme la réponse d'un message _Confirmable_ dans le cas où la demande n'aurait pu être traitée de façon synchrone, le message ID sera alors utilisé pour associe la réponse à la demande.  
+
+#Reset(3):  
+
+Dans le cas où le message n'a pas pu être traité   |
 | Gauche        |     Centre      |
