@@ -53,8 +53,12 @@ Les messages CoAP sont par défaut transportés au travers de datagrammes UDP. C
 
 Pour lancer le test, assurez vous que les fichier coapServeur.py et exempleresources.py sont dans le même dossier.
 Téléchargez au préalable les librairies necessaires  
+
 **ATTENTION la librairie CoAPthon n'est pas compatible avec python 3, j'ai utilisé python 2.7**
 
 Lancez dans un premier temps le script serveur, puis le script client.
 
-Il sagit d'un simple test d'une requête
+Il sagit d'un simple test d'une requête de type ACK sans Token avec le payload "Basic ressource" .
+Le fichier basicRessources est une classe permettant d'initialiser le serveur.
+Ici une simple requête est envoyé par le client au serveur et ce dernier lui répond.
+ 
