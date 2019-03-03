@@ -8,11 +8,17 @@ Cette technologie permet l’interaction avec des capteurs au travers de service
 
 
 il apporte ces principales fonctionnalités : 
+
 •	Faible surcharge d'entête et complexité d’interprétation réduite ;
+
 •	Transport UDP avec une couche application unicast fiable et le support du multicast ;
+
 •	Échange de messages sans état en asynchrone ;
+
 •	Possibilité d'utiliser des proxys (facilite l’intégration avec l'existant) et de mettre les informations en cache (périphériques en veille) ;
+
 •	Découverte et observation des ressources ;
+
 •	Représentation des ressources URI et support de différents types de contenus.
 
 
